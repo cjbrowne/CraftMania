@@ -63,6 +63,7 @@ public class World
 	private Player _player;
 	private Sky _sky;
 	private List<Vec3i> _redstoneRefeedPoints;
+    private Game game;
 
 	private List<Chunk> _localChunks;
 	private List<Chunk> _oldChunkList;
@@ -84,8 +85,9 @@ public class World
 
 	private boolean _checkForNewChunks;
 
-	public World(String name, long seed) throws Exception
+	public World(String name, long seed, Game game) throws Exception
 	{
+        this.game = game;
 		_worldName = name;
 		_worldSeed = seed;
 		_worldProvider = new DefaultWorldProvider(this);
@@ -100,12 +102,11 @@ public class World
 		_chunkDistanceComparator = new ChunkDistanceComparator();
 		_fogColor = new Vec3f();
 		_time = SECONDS_IN_DAY * 0.3f;
-		
 	}
 
-	public World(String name) throws Exception
+	public World(String name, Game game) throws Exception
 	{
-		this(name, loadSeed(name));
+		this(name, loadSeed(name), game);
 	}
 
 	private static long loadSeed(String world)
@@ -662,6 +663,7 @@ public class World
 		}
 	}
 
+    // TODO: World should not handle input processing, this should be in Game or in its own class
 	private void processInput()
 	{
 		/* Keyboard */
@@ -719,6 +721,8 @@ public class World
 		} else if (ControlSettings.isCurrentEvent(ControlSettings.SET_SUN_HIGHT, mouse))
 		{
 			setTime(SECONDS_IN_DAY * 0.4f);
+		} else if (ControlSettings.isCurrentEvent(ControlSettings.QUIT_GAME, mouse)) {
+            game.quit();
 		}
 
 	}

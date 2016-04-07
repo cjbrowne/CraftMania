@@ -14,4 +14,4 @@ fire_viewing_distance=25
 texture_pack=GoodMorningCraftv3.4
 
 ### Keyboard
-keyboard=azerty
+keyboard=qwerty

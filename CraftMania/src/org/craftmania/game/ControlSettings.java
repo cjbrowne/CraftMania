@@ -24,15 +24,17 @@ import org.lwjgl.input.Mouse;
 public class ControlSettings
 {
 
+
+
 	public static enum KeyboardPreset
 	{
-		AZERTY, QWERTY
+		AZERTY, QWERTY;
 	}
-
-
 	private static Map<Integer, Boolean> MAP_MOUSE = new HashMap<Integer, Boolean>();
+
 	private static Map<Integer, Integer> MAP_SETTINGS = new HashMap<Integer, Integer>();
 
+	// TODO: clean up all of these and make it an enum proper instead of whatever the fuck this is.
 	/* Walking */
 	public static final int MOVE_FORWARD = 1;
 	public static final int MOVE_BACK = 2;
@@ -51,6 +53,9 @@ public class ControlSettings
 	public static final int TOGGLE_LIGHT_POINT = 101;
 	public static final int TOGGLE_OVERLAY = 102;
 	public static final int SET_SUN_HIGHT = 103;
+
+	/* useful actions that the original CraftMania dev forgot about, starting at 1000 because I don't want to risk conflicts */
+	public static final int QUIT_GAME = 1000;
 
 	public static void initialize(KeyboardPreset preset)
 	{
@@ -110,6 +115,8 @@ public class ControlSettings
 		configureAction(TOGGLE_GOD_MODE, false, Keyboard.KEY_F);
 		configureAction(TOGGLE_OVERLAY, false, Keyboard.KEY_O);
 		configureAction(SET_SUN_HIGHT, false, Keyboard.KEY_P);
+
+		configureAction(QUIT_GAME, false, Keyboard.KEY_ESCAPE);
 	}
 
 	public static boolean isKeyboard(int action)

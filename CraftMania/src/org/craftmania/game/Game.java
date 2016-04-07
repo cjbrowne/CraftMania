@@ -52,8 +52,13 @@ public class Game
 	private static Game __instance;
 	private int[] _fpsDataBuffer;
 	private float _averageFPS;
+    private boolean shouldQuitNextTick;
 
 	public static boolean RENDER_INFORMATION_OVERLAY = false;
+
+    private Game() {
+        shouldQuitNextTick = false;
+    }
 
 	public static Game getInstance()
 	{
@@ -321,15 +326,16 @@ public class Game
 		glEnd();
 	}
 
+    public void quit() {
+        shouldQuitNextTick = true;
+    }
+
 	public void startGameLoop()
 	{
 
 		Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-		while (!Display.isCloseRequested())
+		while (!Display.isCloseRequested() && !shouldQuitNextTick)
 		{
-			if (Keyboard.isKeyDown(Keyboard.KEY_LMENU) && Keyboard.isKeyDown(Keyboard.KEY_RETURN))
-			{
-			}
 			long startTiming = System.nanoTime();
 			_step = 1.0f / _fps;
 			
@@ -407,6 +413,7 @@ public class Game
 		BlockManager.getInstance().release();
 		TextureStorage.release();
 		FontStorage.release();
+		Mouse.setGrabbed(false);
 		Display.destroy();
 	}
 
