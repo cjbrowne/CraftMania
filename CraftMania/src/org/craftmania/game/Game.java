@@ -525,13 +525,13 @@ public class Game
 		File f = null;
 		if (os.contains("mac"))
 		{
-			f = new File(getUserHome(), "Library/Application Support/craftmania");
+			f = new File(getUserHome(), "Library/Application Support/factorybuilder3d");
 		} else if (os.contains("inux") || os.contains("nix"))
 		{
-			f = new File(getUserHome(), ".craftmania");
+			f = new File(getUserHome(), ".factorybuilder3d");
 		} else if (os.contains("win"))
 		{
-			f = new File(new File(System.getenv("APPDATA")), ".craftmania");
+			f = new File(new File(System.getenv("APPDATA")), ".factorybuilder3d");
 		}
 		f.mkdir();
 		return f;

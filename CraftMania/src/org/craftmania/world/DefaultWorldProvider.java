@@ -293,7 +293,12 @@ public class DefaultWorldProvider extends WorldProvider
 		float level1 = 30.0f * _pNoise1.noise(x * 0.01f, z * 0.01f);
 		float level2 = 40.0f * _pNoise2.noise(x * 0.04f, z * 0.04f) * _pNoise3.noise(x * 0.002f, z * 0.002f);
 		float level3 = 4.0f * _pNoise1.noise(x * 0.08f, z * 0.08f);
-		return MathHelper.round(70 + level1 + level2 + level3);
+
+		// Flat maps
+		return 70;
+
+		// uncomment to get non-flat maps
+		//return MathHelper.round(70 + level1 + level2 + level3);
 	}
 
 	@Override
