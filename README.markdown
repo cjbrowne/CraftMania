@@ -5,6 +5,8 @@ A game of building factories!  It's a voxelised Factorio clone.
 
 The game is based on an earlier project to clone Minecraft, called CraftMania.
 
+Join us on IRC at #factoriobuilder3d on freenode.net
+
 Credits
 =======
 
