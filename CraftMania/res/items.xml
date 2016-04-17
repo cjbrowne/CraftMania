@@ -23,17 +23,17 @@
 		<stackable>true</stackable>
 	</item>
 
-	<item name="wooden_shovel" class="org.craftmania.items.tools.WoodenShovel" />
-	<item name="wooden_pickaxe" class="org.craftmania.items.tools.WoodenPickaxe" />
-	<item name="wooden_axe" class="org.craftmania.items.tools.WoodenAxe" />
-	<item name="wooden_sword" class="org.craftmania.items.tools.WoodenSword" />
+	<item name="wooden_shovel" class="org.factorybuilder3d.items.tools.WoodenShovel" />
+	<item name="wooden_pickaxe" class="org.factorybuilder3d.items.tools.WoodenPickaxe" />
+	<item name="wooden_axe" class="org.factorybuilder3d.items.tools.WoodenAxe" />
+	<item name="wooden_sword" class="org.factorybuilder3d.items.tools.WoodenSword" />
 
-	<item name="stone_shovel" class="org.craftmania.items.tools.StoneShovel" />
-	<item name="stone_pickaxe" class="org.craftmania.items.tools.StonePickaxe" />
-	<item name="stone_axe" class="org.craftmania.items.tools.StoneAxe" />
+	<item name="stone_shovel" class="org.factorybuilder3d.items.tools.StoneShovel" />
+	<item name="stone_pickaxe" class="org.factorybuilder3d.items.tools.StonePickaxe" />
+	<item name="stone_axe" class="org.factorybuilder3d.items.tools.StoneAxe" />
 
-	<item name="bedrock_pickaxe" class="org.craftmania.items.tools.BedrockPickaxe" />
-	<item name="bedrock_sword" class="org.craftmania.items.tools.BedrockSword" />
-	<item name="bedrock_shovel" class="org.craftmania.items.tools.BedrockShovel" />
-	<item name="bedrock_axe" class="org.craftmania.items.tools.BedrockAxe" />
+	<item name="bedrock_pickaxe" class="org.factorybuilder3d.items.tools.BedrockPickaxe" />
+	<item name="bedrock_sword" class="org.factorybuilder3d.items.tools.BedrockSword" />
+	<item name="bedrock_shovel" class="org.factorybuilder3d.items.tools.BedrockShovel" />
+	<item name="bedrock_axe" class="org.factorybuilder3d.items.tools.BedrockAxe" />
 </root>

@@ -97,7 +97,7 @@
         </brush>
         <resistance>9</resistance>
         <blockClass>WOOD</blockClass>
-        <customClass>org.craftmania.blocks.customblocks.CraftingTable</customClass>
+        <customClass>org.factorybuilder3d.blocks.customblocks.CraftingTable</customClass>
         <hasSpecialAction>true</hasSpecialAction>
         <hasSpecialSaveData>true</hasSpecialSaveData>
     </block>
@@ -153,7 +153,7 @@
     
     <block id="15" name="torch">
         <crossedbrush>0,5</crossedbrush>
-        <customClass>org.craftmania.blocks.customblocks.Torch</customClass>
+        <customClass>org.factorybuilder3d.blocks.customblocks.Torch</customClass>
         <solid>false</solid>
         <normalAABB>false</normalAABB>
         <dimensions>0.2,0.3,0.2</dimensions>
@@ -194,7 +194,7 @@
     </block>
     <block id="20" name="tallgrass">
  		<supportNeeded>true</supportNeeded>
-    	<customClass>org.craftmania.blocks.customblocks.TallGrass</customClass>
+    	<customClass>org.factorybuilder3d.blocks.customblocks.TallGrass</customClass>
     	<solid>false</solid>
     	<translucent>true</translucent>
     	<mineResult>null</mineResult>
@@ -234,14 +234,14 @@
     		<bottom>9,1</bottom>
     	</brush>
     	<blockClass>WOOD</blockClass>
-    	<customClass>org.craftmania.blocks.customblocks.Container</customClass>
+    	<customClass>org.factorybuilder3d.blocks.customblocks.Container</customClass>
     	<resistance>9</resistance>
     	<hasSpecialAction>true</hasSpecialAction>
     	<hasSpecialSaveData>true</hasSpecialSaveData>
     </block>
     <block id="25" name="redstone">
     	<hasRedstoneLogic>true</hasRedstoneLogic>
-    	<customClass>org.craftmania.blocks.customblocks.Redstone</customClass>
+    	<customClass>org.factorybuilder3d.blocks.customblocks.Redstone</customClass>
     	<customInventoryImage texture="items">8,3</customInventoryImage>
     	<translucent>true</translucent>
     	<solid>false</solid>
@@ -258,7 +258,7 @@
     </block>
     <block id="27" name="redstone_torch">
     	<crossedbrush>3,6</crossedbrush>
-    	<customClass>org.craftmania.blocks.customblocks.RedstoneTorch</customClass>
+    	<customClass>org.factorybuilder3d.blocks.customblocks.RedstoneTorch</customClass>
         <solid>false</solid>
         <normalAABB>false</normalAABB>
         <dimensions>0.2,0.3,0.2</dimensions>
@@ -271,7 +271,7 @@
     	<brush>
     		<allsides>3,13</allsides>
     	</brush>
-    	<customClass>org.craftmania.blocks.customblocks.RedstoneLamp</customClass>
+    	<customClass>org.factorybuilder3d.blocks.customblocks.RedstoneLamp</customClass>
     	<hasRedstoneLogic>true</hasRedstoneLogic>
     </block>
 </root>
